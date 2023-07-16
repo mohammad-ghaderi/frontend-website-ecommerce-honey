@@ -4,7 +4,7 @@ import logo from '../images/logo.png'
 
 const Header = () => {
   return (
-    <header>
+    <header class="sticky-top">
         <Navbar expand="lg" variant='light' bg='light' className='border-bottom border-secondary p-0'>
             <Container className=''>
                 <Navbar.Brand href="" className='fs-2 m-0'>
