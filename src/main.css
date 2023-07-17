@@ -1,0 +1,26 @@
+
+.product-image-wrap{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image-wrap img{
+    height: inherit;
+    width: auto;
+    scale: 1;
+}
+
+.product-image-wrap img:hover{
+    animation: zoomImage 1s ease 0s 1 normal forwards;
+}
+
+@keyframes zoomImage {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
