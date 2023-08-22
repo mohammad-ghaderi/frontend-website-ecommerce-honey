@@ -1,0 +1,58 @@
+
+/* the top main image styles and being responsived */
+.top-imag-wrap{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.top-imag-wrap div{
+    background-color: #00000070;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .top-imag-wrap img{
+        height: 250px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .top-imag-wrap img{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .top-imag-wrap img{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .top-imag-wrap img{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .top-imag-wrap img{
+        height: 370px;
+        width: 100cqw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .top-imag-wrap img{
+        height: 550px;
+    }
+
+}
+
+
+/* the products in home screen page styles */

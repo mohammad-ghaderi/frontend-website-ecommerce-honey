@@ -1,0 +1,138 @@
+/* header styles */
+
+.navbar-wrap{
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+
+.wrap-element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.left-nav-wrap{
+    position: fixed;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 6px 7px 20px 1px black;
+    height: 100vh;
+    width: 120px;
+    z-index: 10;
+    animation: exit-left-nav 0.5s ease 0s 1 normal forwards;
+}
+.left-nav-wrap.active{
+    display: block;
+    animation: enter-left-nav 1s ease 0s 1 normal forwards;
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+
+.left-nav a{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+.left-nav a:hover{
+    background-color: #ffffffa2;
+}
+
+
+.hamburger{
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    padding: 0;
+    border: none;
+}
+
+
+
+@media screen and (min-width: 481px) {
+    .left-nav-wrap,.left-nav-wrap.active{
+        display: none;
+    }
+
+    
+    .hamburger{
+        display: none;
+    }
+}
+
+
+@keyframes enter-left-nav {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes exit-left-nav {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(250px);
+        display: none;
+	}
+}
+
+/* top small nav */
+
+.top-nav-wrap{
+    display: none;
+}
+
+.top-small-nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.top-small-nav a{
+    font-size: 17px;
+    font-weight: 900;
+    padding: 5px 7px;
+    margin-top: 9px;
+    border: none;
+}
+
+.top-small-nav a.active{
+    border-bottom: 2px solid orange;
+    
+}
+
+
+@media screen and (min-width: 481px) {
+    
+    .top-nav-wrap{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 2012px) {
+    
+    .wrap-element{
+        padding: 2px 500px;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Rating = ({value,text,color}) => {
   return (
-    <div className='rating d-flex' >
+    <div className='rating d-flex align-items-center' >
         <div className='d-flex flex-row-reverse'>
             
             <span>
